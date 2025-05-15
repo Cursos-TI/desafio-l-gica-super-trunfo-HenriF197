@@ -41,12 +41,16 @@ printf ("PIB per capita: %.2f reais \n", PiB / Populacao);
 
 
 if (populacao > Populacao){
+    printf ("*** Carta 1 Venceu! ***\n");
 
-    printf ("Carta 1 Venceu! \n");
-} else {
-printf (" Carta 2 venceu! \n");
+} else if (populacao < Populacao){
+    printf ("*** Carta 2 Venceu! ***\n");
+
+} else  {
+    printf ("*** houve um empate! ***\n");
 
 }
+
 
 return 0;
 
